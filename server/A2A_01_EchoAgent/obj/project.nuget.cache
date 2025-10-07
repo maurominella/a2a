@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "1467r5osRxs=",
+  "success": true,
+  "projectFilePath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_01_EchoAgent\\A2A_01_EchoAgent.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mauromi\\.nuget\\packages\\a2a\\0.3.1-preview\\a2a.0.3.1-preview.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\a2a.aspnetcore\\0.3.1-preview\\a2a.aspnetcore.0.3.1-preview.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.6\\microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.6\\microsoft.extensions.dependencyinjection.9.0.6.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.6\\microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.logging\\9.0.6\\microsoft.extensions.logging.9.0.6.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.6\\microsoft.extensions.logging.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.options\\9.0.6\\microsoft.extensions.options.9.0.6.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.6\\microsoft.extensions.primitives.9.0.6.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\system.linq.asyncenumerable\\10.0.0-preview.5.25277.114\\system.linq.asyncenumerable.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\mauromi\\.nuget\\packages\\system.net.serversentevents\\10.0.0-preview.5.25277.114\\system.net.serversentevents.10.0.0-preview.5.25277.114.nupkg.sha512"
+  ],
+  "logs": []
+}
