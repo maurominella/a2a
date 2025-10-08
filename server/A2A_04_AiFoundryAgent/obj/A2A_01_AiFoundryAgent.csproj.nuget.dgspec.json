@@ -57,6 +57,18 @@
             "A2A.AspNetCore": {
               "target": "Package",
               "version": "[0.3.1-preview, )"
+            },
+            "Azure.AI.Agents.Persistent": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.SemanticKernel.Agents.AzureAI": {
+              "target": "Package",
+              "version": "[1.65.0-preview, )"
             }
           },
           "imports": [

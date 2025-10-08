@@ -8,7 +8,7 @@ var app = builder.Build();
 
 // Create and register your agent
 var taskManager = new TaskManager();
-var agent = new AiFoundryAgent();
+var agent = await AiFoundryAgent.CreateAsync(); // internally runs new AiFoundryAgent();
 
 agent.Attach(taskManager);
 
