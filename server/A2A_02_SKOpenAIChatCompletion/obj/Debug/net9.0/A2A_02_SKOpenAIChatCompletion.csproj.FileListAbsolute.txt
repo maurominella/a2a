@@ -72,3 +72,4 @@ E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_SKOpenAIChatCompletion\bin\D
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_SKOpenAIChatCompletion\bin\Debug\net9.0\System.Linq.AsyncEnumerable.dll
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_SKOpenAIChatCompletion\bin\Debug\net9.0\System.Net.ServerSentEvents.dll
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_SKOpenAIChatCompletion\obj\Debug\net9.0\A2A_02_SKOpenAIChatCompletion.MvcApplicationPartsAssemblyInfo.cs
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_SKOpenAIChatCompletion\obj\Debug\net9.0\A2A_02_SKOpenAIChatCompletion.sourcelink.json

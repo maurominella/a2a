@@ -39,3 +39,4 @@ E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\S
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.csproj.AssemblyReference.cache
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.MvcApplicationPartsAssemblyInfo.cs
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_E.E82BC8FC.Up2Date
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.sourcelink.json

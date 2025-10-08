@@ -24,3 +24,4 @@ E:\Users\mauromi\source\git_repos\a2a\client\A2AClient\obj\Debug\net9.0\refint\A
 E:\Users\mauromi\source\git_repos\a2a\client\A2AClient\obj\Debug\net9.0\A2AClient.pdb
 E:\Users\mauromi\source\git_repos\a2a\client\A2AClient\obj\Debug\net9.0\A2AClient.genruntimeconfig.cache
 E:\Users\mauromi\source\git_repos\a2a\client\A2AClient\obj\Debug\net9.0\ref\A2AClient.dll
+E:\Users\mauromi\source\git_repos\a2a\client\A2AClient\obj\Debug\net9.0\A2AClient.sourcelink.json

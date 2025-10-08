@@ -12,8 +12,6 @@ builder.Services.AddLogging(configure => configure.AddConsole().SetMinimumLevel(
 // ASP.NET Core minimal API to expose the agent via HTTP endpoint
 var app = builder.Build();
 
-app.UseHttpsRedirection();
-
 // Create and register your agent
 var taskManager = new TaskManager();
 var agent = new SKCompletionAgent();

@@ -6,8 +6,6 @@ using AgentServer; // if EchoAgent file is in namespace "AgentServer"
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.UseHttpsRedirection();
-
 // Create and register your agent
 var taskManager = new TaskManager();
 var agent = new EchoAgent();

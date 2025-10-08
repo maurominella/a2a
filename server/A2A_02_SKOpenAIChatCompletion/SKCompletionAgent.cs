@@ -83,9 +83,6 @@ public class SKCompletionAgent
         #region Environment Configuration
         // Load configuration from environment variables or user secrets.
         var ai_settings = new AISettings();
-        Console.WriteLine($"AZURE_OPENAI_ENDPOINT: {ai_settings.AzureOpenAI.Endpoint}\n" +
-            $"AZURE_OPENAI_CHAT_DEPLOYMENT_NAME: {ai_settings.AzureOpenAI.ChatModelDeployment}\n" +
-            $"PROJECT_ENDPOINT: {ai_settings.AzureOpenAI.ProjectEndpoint}\n");
         #endregion
 
         // Create the kernel builder with the pointer to Azure OpenAI
@@ -122,6 +119,7 @@ public class SKCompletionAgent
         var pluginInstance = new LightsPlugin();
         kernel.Plugins.AddFromObject(pluginInstance, "Lights");
 
+        Console.WriteLine($"\n\n=========== Agent <{agent_name}> was initialized ===========\n\n");
     }
     
     private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)
@@ -133,12 +131,15 @@ public class SKCompletionAgent
             var sk_chatcompletionagent_thread = new ChatHistoryAgentThread();
             var message = new ChatMessageContent(AuthorRole.User, question);
 
+            Console.WriteLine("\n");
+
             await foreach (StreamingChatMessageContent response in sk_chatcompletion_agent.InvokeStreamingAsync(message: message, thread: sk_chatcompletionagent_thread))
             //await foreach (ChatMessageContent response in sk_chatcompletion_agent.InvokeAsync(message: message, thread: sk_chatcompletionagent_thread))
             {
-                Console.Write($"{response.Content}");
+                Console.Write(response.Content);
                 agent_response += response.Content;
             }
+            Console.WriteLine("\n\n+++++++++++++++++\n");
         }
         else
         {
