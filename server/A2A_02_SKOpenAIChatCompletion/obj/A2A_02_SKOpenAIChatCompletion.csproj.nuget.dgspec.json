@@ -60,7 +60,7 @@
             },
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.16.0, )"
+              "version": "[1.17.0, )"
             },
             "DotNetEnv": {
               "target": "Package",
@@ -68,23 +68,23 @@
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             },
             "Microsoft.SemanticKernel": {
               "target": "Package",
-              "version": "[1.65.0, )"
+              "version": "[1.66.0, )"
             },
             "Microsoft.SemanticKernel.Agents.Core": {
               "target": "Package",
-              "version": "[1.65.0, )"
+              "version": "[1.66.0, )"
             }
           },
           "imports": [

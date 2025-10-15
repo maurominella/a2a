@@ -14,7 +14,7 @@ namespace AgentServer; // Namespace for the agent server
 
 public class AiFoundryAgent
 {
-    AzureAIAgent? sk_aifoundry_agent;
+    AzureAIAgent? _agent;
     
     public AiFoundryAgent() { }
 
@@ -24,13 +24,37 @@ public class AiFoundryAgent
         await agent.InitializeAgentAsync(aifoundryagent_id: null);
         return agent;
     }
-
     public void Attach(ITaskManager taskManager)
     {
         taskManager.OnMessageReceived = ProcessMessageAsync;
         taskManager.OnAgentCardQuery = GetAgentCardAsync;
     }
+    public Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
+    {
 
+        if (cancellationToken.IsCancellationRequested)
+        {
+            return Task.FromCanceled<AgentCard>(cancellationToken);
+        }
+
+        var capabilities = new AgentCapabilities()
+        {
+            Streaming = true,
+            PushNotifications = false,
+        };
+
+        return Task.FromResult(new AgentCard()
+        {
+            Name = _agent?.Name ?? "Generic AI Agent",
+            Description = _agent?.Description ?? "Generic AI agent Description",
+            Url = agentUrl,
+            Version = "1.0.0",
+            DefaultInputModes = ["text"],
+            DefaultOutputModes = ["text"],
+            Capabilities = capabilities,
+            Skills = []
+        });
+    }
     private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
     {
         if (cancellationToken.IsCancellationRequested)
@@ -55,44 +79,17 @@ public class AiFoundryAgent
         return Task.FromResult<A2A.A2AResponse>(message);
     }
 
-    private Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
-    {
-
-        if (cancellationToken.IsCancellationRequested)
-        {
-            return Task.FromCanceled<AgentCard>(cancellationToken);
-        }
-
-        var capabilities = new AgentCapabilities()
-        {
-            Streaming = true,
-            PushNotifications = false,
-        };
-
-        return Task.FromResult(new AgentCard()
-        {
-            Name = "Echo Agent",
-            Description = "Echoes messages back to the user",
-            Url = agentUrl,
-            Version = "1.0.0",
-            DefaultInputModes = ["text"],
-            DefaultOutputModes = ["text"],
-            Capabilities = capabilities,
-            Skills = []
-        });
-    }
-
     private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)
     {
         string? agent_response = "";
 
         Console.WriteLine("\n");
 
-        AzureAIAgentThread agentThread = new(sk_aifoundry_agent.Client);
+        AzureAIAgentThread agentThread = new(_agent.Client);
         ChatMessageContent message = new(AuthorRole.User, question);
 
         // await foreach (ChatMessageContent response in sk_aifoundry_agent.InvokeAsync(message2, agentThread)) // non-streaming version
-        await foreach (StreamingChatMessageContent response in sk_aifoundry_agent.InvokeStreamingAsync(message, agentThread)) // streaming version
+        await foreach (StreamingChatMessageContent response in _agent.InvokeStreamingAsync(message, agentThread)) // streaming version
         {
             Console.Write(response.Content);
             agent_response += response.Content;
@@ -124,11 +121,14 @@ public class AiFoundryAgent
 
         if (string.IsNullOrWhiteSpace(aifoundryagent_id))
         {
+            string agent_name = "AI Foundry Agent with Semantic Kernel";
+            string agent_description = "AI Foundry Agent using Semantic Kernel";
+            string instructions = "You are a clever agent";
             sk_ai_agent_definition = await aiagents_client.Administration.CreateAgentAsync(
                 model: ai_settings.AzureOpenAI.ChatModelDeployment,
-                name: "AiFoundryAgent",
-                description: "An agent that uses Microsoft AI Foundry capabilities to answer questions.",
-                instructions: "You are an AI assistant that helps people find information.",
+                name: agent_name,
+                description: agent_description,
+                instructions: instructions,
                 tools: [bingGroundingTool]
             );
         }
@@ -137,8 +137,8 @@ public class AiFoundryAgent
             sk_ai_agent_definition = await aiagents_client.Administration.GetAgentAsync(aifoundryagent_id);
         }
 
-        sk_aifoundry_agent = new AzureAIAgent(sk_ai_agent_definition, aiagents_client);
+        _agent = new AzureAIAgent(sk_ai_agent_definition, aiagents_client);
 
-        Console.WriteLine($"\n\n=========== Agent <{sk_aifoundry_agent.Name}> was initialized with id <{sk_aifoundry_agent.Id}> ===========\n\n");
+        Console.WriteLine($"\n\n=========== Agent <{_agent.Name}> was initialized with id <{_agent.Id}> ===========\n\n");
     }
 }

@@ -14,31 +14,7 @@ public class EchoAgent
         taskManager.OnAgentCardQuery = GetAgentCardAsync;
     }
 
-    private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
-    {
-        if (cancellationToken.IsCancellationRequested)
-        {
-            return Task.FromCanceled<A2AResponse>(cancellationToken);
-        }
-
-        // process the message
-        var messageText = messageSendParams.Message.Parts.OfType<TextPart>().First().Text;
-
-        var response = GenericChatWithAgentAsync(agent: null, messageText).Result;
-
-        // create and return an artifact
-        var message = new A2A.AgentMessage()
-        {
-            Role = MessageRole.Agent,
-            MessageId = Guid.NewGuid().ToString(),
-            ContextId = messageSendParams.Message.ContextId,
-            Parts = [new TextPart { Text = messageText }]
-        };
-
-        return Task.FromResult<A2A.A2AResponse>(message);
-    }
-
-    private Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
+    public Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
     {
 
         if (cancellationToken.IsCancellationRequested)
@@ -65,6 +41,31 @@ public class EchoAgent
         });
     }
 
+    private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
+    {
+        if (cancellationToken.IsCancellationRequested)
+        {
+            return Task.FromCanceled<A2AResponse>(cancellationToken);
+        }
+
+        // process the message
+        var messageText = messageSendParams.Message.Parts.OfType<TextPart>().First().Text;
+
+        var response = GenericChatWithAgentAsync(agent: null, messageText).Result;
+
+        // create and return an artifact
+        var ResponseMessage = new A2A.AgentMessage()
+        {
+            Role = MessageRole.Agent,
+            MessageId = Guid.NewGuid().ToString(),
+            ContextId = messageSendParams.Message.ContextId,
+            Parts = [new TextPart { Text = response }]
+        };
+
+        return Task.FromResult<A2A.A2AResponse>(ResponseMessage);
+    }
+
+    
     private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)
     {
         string? agent_response = "";

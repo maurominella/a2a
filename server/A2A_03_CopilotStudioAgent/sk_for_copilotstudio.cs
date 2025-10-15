@@ -11,7 +11,11 @@ namespace AgentServer; // Namespace for the agent server
 
 public class sk_for_copilotstudio
 {
-    CopilotStudioAgent? _copilotStudioAgent;
+    CopilotStudioAgent? _agent;
+    string _agent_name = "Copilot Studio Agent";
+    string _agent_description = "Copilot Studio Agent wrapped by Semantic Kernel and A2A";
+    // string _agent_instructions = "You are a clever agent";
+
     public sk_for_copilotstudio()
     {
         InitializeAgent();
@@ -22,32 +26,7 @@ public class sk_for_copilotstudio
         taskManager.OnMessageReceived = ProcessMessageAsync;
         taskManager.OnAgentCardQuery = GetAgentCardAsync;
     }
-
-    private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
-    {
-        if (cancellationToken.IsCancellationRequested)
-        {
-            return Task.FromCanceled<A2AResponse>(cancellationToken);
-        }
-
-        // process the message
-        var messageText = messageSendParams.Message.Parts.OfType<TextPart>().First().Text;
-
-        var response = GenericChatWithAgentAsync(agent: _copilotStudioAgent, messageText).Result;
-
-        // create and return an artifact
-        var message = new A2A.AgentMessage()
-        {
-            Role = MessageRole.Agent,
-            MessageId = Guid.NewGuid().ToString(),
-            ContextId = messageSendParams.Message.ContextId,
-            Parts = [new TextPart { Text = response }]
-        };
-
-        return Task.FromResult<A2A.A2AResponse>(message);
-    }
-
-    private Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
+    public Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
     {
 
         if (cancellationToken.IsCancellationRequested)
@@ -63,8 +42,8 @@ public class sk_for_copilotstudio
 
         return Task.FromResult(new AgentCard()
         {
-            Name = "sk_for_copilotstudio",
-            Description = "Semantic Kernel Agent for Copilot Studio",
+            Name = _agent_name,
+            Description = _agent_description,
             Url = agentUrl,
             Version = "1.0.0",
             DefaultInputModes = ["text"],
@@ -72,6 +51,29 @@ public class sk_for_copilotstudio
             Capabilities = capabilities,
             Skills = []
         });
+    }
+    private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
+    {
+        if (cancellationToken.IsCancellationRequested)
+        {
+            return Task.FromCanceled<A2AResponse>(cancellationToken);
+        }
+
+        // process the message
+        var messageText = messageSendParams.Message.Parts.OfType<TextPart>().First().Text;
+
+        var response = GenericChatWithAgentAsync(agent: _agent, messageText).Result;
+
+        // create and return an artifact
+        var message = new A2A.AgentMessage()
+        {
+            Role = MessageRole.Agent,
+            MessageId = Guid.NewGuid().ToString(),
+            ContextId = messageSendParams.Message.ContextId,
+            Parts = [new TextPart { Text = response }]
+        };
+
+        return Task.FromResult<A2A.A2AResponse>(message);
     }
 
     private void InitializeAgent()
@@ -95,9 +97,9 @@ public class sk_for_copilotstudio
         copilotStudioConnectionSettings.SchemaName = SchemaName;
 
         CopilotClient copilotClient = CopilotStudioAgent.CreateClient(copilotStudioConnectionSettings);
-        _copilotStudioAgent = new CopilotStudioAgent(copilotClient);
+        _agent = new CopilotStudioAgent(copilotClient);        
 
-        Console.WriteLine($"\n\n=========== Agent <sk_for_copilotstudio> was initialized ===========\n\n");
+        Console.WriteLine($"\n\n=========== Agent <{_agent_name}> was initialized ===========\n\n");
     }
 
     private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)

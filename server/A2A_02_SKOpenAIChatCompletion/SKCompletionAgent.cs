@@ -27,31 +27,7 @@ public class SKCompletionAgent
         taskManager.OnAgentCardQuery = GetAgentCardAsync;
     }
 
-    private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
-    {
-        if (cancellationToken.IsCancellationRequested)
-        {
-            return Task.FromCanceled<A2AResponse>(cancellationToken);
-        }
-
-        // process the message
-        var messageText = messageSendParams.Message.Parts.OfType<TextPart>().First().Text;
-
-        var response = GenericChatWithAgentAsync(agent: _agent, messageText).Result;
-
-        // create and return an artifact\
-        var message = new A2A.AgentMessage()
-        {
-            Role = MessageRole.Agent,
-            MessageId = Guid.NewGuid().ToString(),
-            ContextId = messageSendParams.Message.ContextId,
-            Parts = [new TextPart { Text = $"Response:\n{response}" }]
-        };
-
-        return Task.FromResult<A2A.A2AResponse>(message);
-    }
-
-    private Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
+    public Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
     {
 
         if (cancellationToken.IsCancellationRequested)
@@ -77,7 +53,31 @@ public class SKCompletionAgent
             Skills = []
         });
     }
+    private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
+    {
+        if (cancellationToken.IsCancellationRequested)
+        {
+            return Task.FromCanceled<A2AResponse>(cancellationToken);
+        }
 
+        // process the message
+        var messageText = messageSendParams.Message.Parts.OfType<TextPart>().First().Text;
+
+        var response = GenericChatWithAgentAsync(agent: _agent, messageText).Result;
+
+        // create and return an artifact\
+        var message = new A2A.AgentMessage()
+        {
+            Role = MessageRole.Agent,
+            MessageId = Guid.NewGuid().ToString(),
+            ContextId = messageSendParams.Message.ContextId,
+            Parts = [new TextPart { Text = $"Response:\n{response}" }]
+        };
+
+        return Task.FromResult<A2A.A2AResponse>(message);
+    }
+
+    
     private void InitializeAgent()
     {
         #region Environment Configuration
@@ -133,8 +133,8 @@ public class SKCompletionAgent
 
             Console.WriteLine("\n");
 
-            await foreach (StreamingChatMessageContent response in sk_chatcompletion_agent.InvokeStreamingAsync(message: message, thread: sk_chatcompletionagent_thread))
-            //await foreach (ChatMessageContent response in sk_chatcompletion_agent.InvokeAsync(message: message, thread: sk_chatcompletionagent_thread))
+            // await foreach (StreamingChatMessageContent response in sk_chatcompletion_agent.InvokeStreamingAsync(message: message, thread: sk_chatcompletionagent_thread))
+            await foreach (ChatMessageContent response in sk_chatcompletion_agent.InvokeAsync(message: message, thread: sk_chatcompletionagent_thread))
             {
                 Console.Write(response.Content);
                 agent_response += response.Content;
