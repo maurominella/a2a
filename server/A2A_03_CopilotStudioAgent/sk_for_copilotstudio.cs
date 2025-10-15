@@ -12,8 +12,8 @@ namespace AgentServer; // Namespace for the agent server
 public class sk_for_copilotstudio
 {
     CopilotStudioAgent? _agent;
-    string _agent_name = "Copilot Studio Agent";
-    string _agent_description = "Copilot Studio Agent wrapped by Semantic Kernel and A2A";
+    string _agent_name = "Copilot Studio Agent with Semantic Kernel";
+    string _agent_description = "Copilot Studio Agent wrapped by Semantic Kernel";
     // string _agent_instructions = "You are a clever agent";
 
     public sk_for_copilotstudio()

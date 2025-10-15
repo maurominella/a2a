@@ -12,7 +12,7 @@ var taskManager = new TaskManager();
 var agent = new sk_for_copilotstudio();
 
 var agent_url = "http://localhost:5003";
-var agent_urlpath = "/copilotstudio";
+var agent_urlpath = "/CopilotStudio";
 
 AgentCard agentCard = await agent.GetAgentCardAsync(agent_url + agent_urlpath, CancellationToken.None);
 

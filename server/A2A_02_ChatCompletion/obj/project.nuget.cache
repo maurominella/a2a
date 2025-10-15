@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pMmWJBVqc0c=",
+  "dgSpecHash": "/GNhsYsyAcQ=",
   "success": true,
-  "projectFilePath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_SKOpenAIChatCompletion\\A2A_02_SKOpenAIChatCompletion.csproj",
+  "projectFilePath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_ChatCompletion\\A2A_02_ChatCompletion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauromi\\.nuget\\packages\\a2a\\0.3.1-preview\\a2a.0.3.1-preview.nupkg.sha512",
     "C:\\Users\\mauromi\\.nuget\\packages\\a2a.aspnetcore\\0.3.1-preview\\a2a.aspnetcore.0.3.1-preview.nupkg.sha512",

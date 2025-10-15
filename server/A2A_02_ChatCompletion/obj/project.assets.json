@@ -6543,11 +6543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_SKOpenAIChatCompletion\\A2A_02_SKOpenAIChatCompletion.csproj",
-      "projectName": "A2A_02_SKOpenAIChatCompletion",
-      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_SKOpenAIChatCompletion\\A2A_02_SKOpenAIChatCompletion.csproj",
+      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_ChatCompletion\\A2A_02_ChatCompletion.csproj",
+      "projectName": "A2A_02_ChatCompletion",
+      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_ChatCompletion\\A2A_02_ChatCompletion.csproj",
       "packagesPath": "C:\\Users\\mauromi\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_SKOpenAIChatCompletion\\obj\\",
+      "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_ChatCompletion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

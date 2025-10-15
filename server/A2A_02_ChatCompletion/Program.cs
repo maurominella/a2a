@@ -18,7 +18,7 @@ var taskManager = new TaskManager();
 var agent = new SKCompletionAgent();
 
 var agent_url = "http://localhost:5002";
-var agent_urlpath = "/LightsAgent";
+var agent_urlpath = "/ChatCompletion";
 
 AgentCard agentCard = await agent.GetAgentCardAsync(agent_url + agent_urlpath, CancellationToken.None);
 

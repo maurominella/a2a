@@ -43,8 +43,8 @@ public class SKCompletionAgent
 
         return Task.FromResult(new AgentCard()
         {
-            Name = "SK Agent",
-            Description = "SK Agent using Semantic Kernel Chat Completion",
+            Name = "Chat Completion Agent with SK",
+            Description = "Chat Completion Agent wrapped by Semantic Kernel",
             Url = agentUrl,
             Version = "1.0.0",
             DefaultInputModes = ["text"],

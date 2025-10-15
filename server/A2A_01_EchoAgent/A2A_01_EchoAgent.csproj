@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <NoWarn>$(NoWarn);CS8603</NoWarn>
+    <NoWarn>$(NoWarn);CS8603;CS8604;CS1998</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
