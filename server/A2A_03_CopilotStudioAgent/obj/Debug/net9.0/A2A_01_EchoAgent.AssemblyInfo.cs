@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("A2A_01_EchoAgent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfaaa09c296996d7cf88917ccf06bf4ac30ed79e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16a8e687601f4d97fd9f2b51c90e36cab25e1f71")]
 [assembly: System.Reflection.AssemblyProductAttribute("A2A_01_EchoAgent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("A2A_01_EchoAgent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
