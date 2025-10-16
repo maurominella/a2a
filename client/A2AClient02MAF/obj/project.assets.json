@@ -914,11 +914,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient01\\A2AClient01.csproj",
-      "projectName": "A2AClient01",
-      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient01\\A2AClient01.csproj",
+      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient02MAF\\A2AClient02MAF.csproj",
+      "projectName": "A2AClient02MAF",
+      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient02MAF\\A2AClient02MAF.csproj",
       "packagesPath": "C:\\Users\\mauromi\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient01\\obj\\",
+      "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient02MAF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

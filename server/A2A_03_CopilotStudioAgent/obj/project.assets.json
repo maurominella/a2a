@@ -6166,9 +6166,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_03_CopilotStudioAgent\\A2A_01_EchoAgent.csproj",
-      "projectName": "A2A_01_EchoAgent",
-      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_03_CopilotStudioAgent\\A2A_01_EchoAgent.csproj",
+      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_03_CopilotStudioAgent\\A2A_03_CopilotStudioAgent.csproj",
+      "projectName": "A2A_03_CopilotStudioAgent",
+      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_03_CopilotStudioAgent\\A2A_03_CopilotStudioAgent.csproj",
       "packagesPath": "C:\\Users\\mauromi\\.nuget\\packages\\",
       "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_03_CopilotStudioAgent\\obj\\",
       "projectStyle": "PackageReference",
@@ -6245,7 +6245,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

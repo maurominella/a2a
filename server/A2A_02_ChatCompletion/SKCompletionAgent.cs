@@ -43,8 +43,8 @@ public class SKCompletionAgent
 
         return Task.FromResult(new AgentCard()
         {
-            Name = "Chat Completion Agent with SK",
-            Description = "Chat Completion Agent wrapped by Semantic Kernel",
+            Name = _agent?.Name ?? "Generic AI Agent",
+            Description = _agent?.Description ?? "Generic AI agent Description",
             Url = agentUrl,
             Version = "1.0.0",
             DefaultInputModes = ["text"],
@@ -84,6 +84,10 @@ public class SKCompletionAgent
         // Load configuration from environment variables or user secrets.
         var ai_settings = new AISettings();
         #endregion
+        
+        string agent_name = "Chat Completion Agent with SK";
+        string agent_description = "Chat Completion Agent with Semantic Kernel";
+        string agent_instructions = "You are a clever agent";
 
         // Create the kernel builder with the pointer to Azure OpenAI
         var kernelBuilder = Kernel.CreateBuilder()
@@ -105,13 +109,11 @@ public class SKCompletionAgent
             { "repository", "microsoft/semantic-kernel" }
         };
 
-        string agent_name = "sk_chatcompletion_agent";
-        string instructions = "you are a clever agent";
-
         _agent = new ChatCompletionAgent
         {
             Name = agent_name,
-            Instructions = instructions,
+            Description = agent_description,
+            Instructions = agent_instructions,
             Kernel = kernel,
             Arguments = kernelArguments ?? new KernelArguments() // Provide a default value if kernelArguments is null
         };
@@ -119,7 +121,7 @@ public class SKCompletionAgent
         var pluginInstance = new LightsPlugin();
         kernel.Plugins.AddFromObject(pluginInstance, "Lights");
 
-        Console.WriteLine($"\n\n=========== Agent <{agent_name}> was initialized ===========\n\n");
+        Console.WriteLine($"\n\n=========== Agent <{_agent.Name}> was initialized ===========\n\n");
     }
     
     private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)

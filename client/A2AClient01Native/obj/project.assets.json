@@ -540,11 +540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient\\A2AClient.csproj",
-      "projectName": "A2AClient",
-      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient\\A2AClient.csproj",
+      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient01Native\\A2AClient01Native.csproj",
+      "projectName": "A2AClient01Native",
+      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient01Native\\A2AClient01Native.csproj",
       "packagesPath": "C:\\Users\\mauromi\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient\\obj\\",
+      "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient01Native\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -608,7 +608,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

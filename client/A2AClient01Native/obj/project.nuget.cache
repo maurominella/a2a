@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AASp38sQKhc=",
+  "dgSpecHash": "geN3vW46PdY=",
   "success": true,
-  "projectFilePath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient\\A2AClient.csproj",
+  "projectFilePath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\client\\A2AClient01Native\\A2AClient01Native.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauromi\\.nuget\\packages\\a2a\\0.3.1-preview\\a2a.0.3.1-preview.nupkg.sha512",
     "C:\\Users\\mauromi\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.6\\microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512",

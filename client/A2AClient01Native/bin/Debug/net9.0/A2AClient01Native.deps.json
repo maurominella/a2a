@@ -1,0 +1,201 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "A2AClient01Native/1.0.0": {
+        "dependencies": {
+          "A2A": "0.3.1-preview",
+          "System.Net.ServerSentEvents": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "A2AClient01Native.dll": {}
+        }
+      },
+      "A2A/0.3.1-preview": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.6",
+          "Microsoft.Extensions.Logging": "9.0.6",
+          "System.Linq.AsyncEnumerable": "10.0.0-preview.5.25277.114",
+          "System.Net.ServerSentEvents": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net9.0/A2A.dll": {
+            "assemblyVersion": "0.3.1.0",
+            "fileVersion": "0.3.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/9.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/9.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.6": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/9.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "9.0.6",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.6",
+          "Microsoft.Extensions.Options": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/9.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/9.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.6",
+          "Microsoft.Extensions.Primitives": "9.0.6"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/9.0.6": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "System.Linq.AsyncEnumerable/10.0.0-preview.5.25277.114": {
+        "runtime": {
+          "lib/net9.0/System.Linq.AsyncEnumerable.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.27814"
+          }
+        }
+      },
+      "System.Net.ServerSentEvents/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net9.0/System.Net.ServerSentEvents.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "A2AClient01Native/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "A2A/0.3.1-preview": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4a9fh1IewunfCHUYFY7JD0UbkUt4vy9ccCULVR+H0zMR7tFRa6ATQOFrf7NufCDWRkbWAT4zXbEuWKuLp9xkRg==",
+      "path": "a2a/0.3.1-preview",
+      "hashPath": "a2a.0.3.1-preview.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bL/xQsVNrdVkzjP5yjX4ndkQ03H3+Bk3qPpl+AMCEJR2RkfgAYmoQ/xXffPV7is64+QHShnhA12YAaFmNbfM+A==",
+      "path": "microsoft.extensions.caching.abstractions/9.0.6",
+      "hashPath": "microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vS65HMo5RS10DD543fknsyVDxihMcVxVn3/hNaILgBxWYnOLxWIeCIO9X0QFuCvPRNjClvXe9Aj8KaQNx7vFkQ==",
+      "path": "microsoft.extensions.dependencyinjection/9.0.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Zn6nR/6g+90MxskZyOOMPQvnPnrrGu6bytPwkV+azDcTtCSuQ1+GJUrg8Klmnrjk1i6zMpw2lXijl+tw7Q3kA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XBzjitTFaQhF8EbJ645vblZezV1p52ePTxKHoVkRidHF11Xkjxg94qr0Rvp2qyxK2vBJ4OIZ41NB15YUyxTGMQ==",
+      "path": "microsoft.extensions.logging/9.0.6",
+      "hashPath": "microsoft.extensions.logging.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LFnyBNK7WtFmKdnHu3v0HOYQ8BcjYuy0jdC9pgCJ/rbLKoJEG9/dBzSKMEeeWDbDeoWS0TIxOC8a9CM5ufca3A==",
+      "path": "microsoft.extensions.logging.abstractions/9.0.6",
+      "hashPath": "microsoft.extensions.logging.abstractions.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wUPhNM1zsI58Dy10xRdF2+pnsisiUuETg5ZBncyAEEUm/CQ9Q1vmivyUWH8RDbAlqyixf2dJNQ2XZb7HsKUEQw==",
+      "path": "microsoft.extensions.options/9.0.6",
+      "hashPath": "microsoft.extensions.options.9.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BHniU24QV67qp1pJknqYSofAPYGmijGI8D+ci9yfw33iuFdyOeB9lWTg78ThyYLyQwZw3s0vZ36VMb0MqbUuLw==",
+      "path": "microsoft.extensions.primitives/9.0.6",
+      "hashPath": "microsoft.extensions.primitives.9.0.6.nupkg.sha512"
+    },
+    "System.Linq.AsyncEnumerable/10.0.0-preview.5.25277.114": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eyTyBcy3HEanysdOjI4UQfFxhKonxiyXc1XEXy0fQysQCS5UKKuJMBzG+qhtOoK5QdA6EFHkGiRzRSQhzcUFwg==",
+      "path": "system.linq.asyncenumerable/10.0.0-preview.5.25277.114",
+      "hashPath": "system.linq.asyncenumerable.10.0.0-preview.5.25277.114.nupkg.sha512"
+    },
+    "System.Net.ServerSentEvents/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IKumEK42ZxeNCOWKAAhgsq16mPNdCTRQ5nW0AGAZVpUvT1Pgpg2/79wKAuuF6YNFTDYxnv283HX4Xdd9pawSqA==",
+      "path": "system.net.serversentevents/10.0.0-rc.1.25451.107",
+      "hashPath": "system.net.serversentevents.10.0.0-rc.1.25451.107.nupkg.sha512"
+    }
+  }
+}

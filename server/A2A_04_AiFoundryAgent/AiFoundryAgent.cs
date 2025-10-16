@@ -106,6 +106,10 @@ public class AiFoundryAgent
         // Load configuration from environment variables or user secrets.
         var ai_settings = new AISettings();
         #endregion
+        
+        string agent_name = "AI Foundry Agent with SK";
+        string agent_description = "AI Foundry Agent using Semantic Kernel";
+        string agent_instructions = "You are a clever agent";
 
         PersistentAgent sk_ai_agent_definition;
 
@@ -119,16 +123,14 @@ public class AiFoundryAgent
                 )
             );
 
+        // FIRST, we create the agent definition...
         if (string.IsNullOrWhiteSpace(aifoundryagent_id))
         {
-            string agent_name = "AI Foundry Agent with Semantic Kernel";
-            string agent_description = "AI Foundry Agent using Semantic Kernel";
-            string instructions = "You are a clever agent";
             sk_ai_agent_definition = await aiagents_client.Administration.CreateAgentAsync(
                 model: ai_settings.AzureOpenAI.ChatModelDeployment,
                 name: agent_name,
                 description: agent_description,
-                instructions: instructions,
+                instructions: agent_instructions,
                 tools: [bingGroundingTool]
             );
         }
@@ -136,7 +138,8 @@ public class AiFoundryAgent
         {
             sk_ai_agent_definition = await aiagents_client.Administration.GetAgentAsync(aifoundryagent_id);
         }
-
+        
+        ///...THEN, we create the SK Kernel Agent
         _agent = new AzureAIAgent(sk_ai_agent_definition, aiagents_client);
 
         Console.WriteLine($"\n\n=========== Agent <{_agent.Name}> was initialized with id <{_agent.Id}> ===========\n\n");

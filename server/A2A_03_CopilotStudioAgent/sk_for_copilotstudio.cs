@@ -12,8 +12,6 @@ namespace AgentServer; // Namespace for the agent server
 public class sk_for_copilotstudio
 {
     CopilotStudioAgent? _agent;
-    string _agent_name = "Copilot Studio Agent with Semantic Kernel";
-    string _agent_description = "Copilot Studio Agent wrapped by Semantic Kernel";
     // string _agent_instructions = "You are a clever agent";
 
     public sk_for_copilotstudio()
@@ -42,8 +40,8 @@ public class sk_for_copilotstudio
 
         return Task.FromResult(new AgentCard()
         {
-            Name = _agent_name,
-            Description = _agent_description,
+            Name = _agent?.Name ?? "Generic AI Agent",
+            Description = _agent?.Description ?? "Generic AI agent Description",
             Url = agentUrl,
             Version = "1.0.0",
             DefaultInputModes = ["text"],
@@ -78,6 +76,10 @@ public class sk_for_copilotstudio
 
     private void InitializeAgent()
     {
+        string agent_name = "Copilot Studio Agent with SK";
+        string agent_description = "Copilot Studio Agent with Semantic Kernel";
+        string agent_instructions = "You are a clever agent";
+
         #region Environment Configuration
         // Load configuration from environment variables or user secrets.
         var ai_settings = new AISettings();
@@ -97,9 +99,13 @@ public class sk_for_copilotstudio
         copilotStudioConnectionSettings.SchemaName = SchemaName;
 
         CopilotClient copilotClient = CopilotStudioAgent.CreateClient(copilotStudioConnectionSettings);
-        _agent = new CopilotStudioAgent(copilotClient);        
+        _agent = new CopilotStudioAgent(copilotClient) {
+            Name = agent_name,
+            Description = agent_description,
+            Instructions = agent_instructions
+        };
 
-        Console.WriteLine($"\n\n=========== Agent <{_agent_name}> was initialized ===========\n\n");
+        Console.WriteLine($"\n\n=========== Agent <{_agent.Name}> was initialized ===========\n\n");
     }
 
     private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)

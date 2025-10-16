@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("A2A_01_AiFoundryAgent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb4b8cec77374524224b3b329d3f139cc8c771f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ec15932000a719831e7cceb2acc84174db775d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("A2A_01_AiFoundryAgent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("A2A_01_AiFoundryAgent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
