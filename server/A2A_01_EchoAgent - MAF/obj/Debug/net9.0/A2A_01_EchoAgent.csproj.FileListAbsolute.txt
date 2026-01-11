@@ -1,0 +1,85 @@
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\appsettings.Development.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\appsettings.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A_01_EchoAgent.staticwebassets.endpoints.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A_01_EchoAgent.exe
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A_01_EchoAgent.deps.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A_01_EchoAgent.runtimeconfig.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A_01_EchoAgent.pdb
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\A2A.AspNetCore.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\System.Linq.AsyncEnumerable.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\bin\Debug\net9.0\System.Net.ServerSentEvents.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.csproj.AssemblyReference.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\rpswa.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.AssemblyInfoInputs.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.AssemblyInfo.cs
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.csproj.CoreCompileInputs.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.MvcApplicationPartsAssemblyInfo.cs
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.MvcApplicationPartsAssemblyInfo.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.sourcelink.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\rjimswa.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\scopedcss\bundle\A2A_01_EchoAgent.styles.css
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\staticwebassets.build.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\staticwebassets.build.json.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\staticwebassets.development.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_E.E82BC8FC.Up2Date
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\refint\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.pdb
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.genruntimeconfig.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\ref\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\appsettings.Development.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\appsettings.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A_01_EchoAgent.staticwebassets.endpoints.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A_01_EchoAgent.exe
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A_01_EchoAgent.deps.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A_01_EchoAgent.runtimeconfig.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A_01_EchoAgent.pdb
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\A2A.AspNetCore.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\System.Linq.AsyncEnumerable.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\bin\Debug\net9.0\System.Net.ServerSentEvents.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.csproj.AssemblyReference.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\rpswa.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.AssemblyInfoInputs.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.AssemblyInfo.cs
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.csproj.CoreCompileInputs.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.MvcApplicationPartsAssemblyInfo.cs
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.MvcApplicationPartsAssemblyInfo.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.sourcelink.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\rjimswa.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\scopedcss\bundle\A2A_01_EchoAgent.styles.css
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\staticwebassets.build.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\staticwebassets.build.json.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\staticwebassets.development.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\swae.build.ex.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_E.E82BC8FC.Up2Date
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\refint\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.pdb
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\A2A_01_EchoAgent.genruntimeconfig.cache
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent - MAF\obj\Debug\net9.0\ref\A2A_01_EchoAgent.dll

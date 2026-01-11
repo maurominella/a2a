@@ -63,3 +63,4 @@ E:\Users\mauromi\source\git_repos\a2a\server\A2A_03_CopilotStudioAgent\obj\Debug
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_03_CopilotStudioAgent\obj\Debug\net9.0\A2A_03_CopilotStudioAgent.pdb
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_03_CopilotStudioAgent\obj\Debug\net9.0\A2A_03_CopilotStudioAgent.genruntimeconfig.cache
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_03_CopilotStudioAgent\obj\Debug\net9.0\ref\A2A_03_CopilotStudioAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_03_CopilotStudioAgent\obj\Debug\net9.0\swae.build.ex.cache

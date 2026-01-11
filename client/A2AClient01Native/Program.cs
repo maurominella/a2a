@@ -6,8 +6,8 @@ using AgentTools; // if AgentCardPrinter file is in namespace "AgentTools"
 Console.Write("Enter the port number where the agent is running (e.g., 5001): http://localhost:");
 var port = Console.ReadLine();
 // Discover agent and create client
-var cardResolver = new A2ACardResolver(new Uri($"http://localhost:{port}/"));
-AgentCard agentCard = cardResolver.GetAgentCardAsync().Result;
+var agentCardResolver = new A2A.A2ACardResolver(new Uri($"http://localhost:{port}/"));
+AgentCard agentCard = agentCardResolver.GetAgentCardAsync().Result;
 
 // Just call:
 Console.WriteLine(AgentCardPrinter.RenderAgentIdentityCard(agentCard));

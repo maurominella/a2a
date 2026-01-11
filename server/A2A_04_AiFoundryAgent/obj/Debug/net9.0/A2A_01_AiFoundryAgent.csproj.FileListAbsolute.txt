@@ -69,3 +69,4 @@ E:\Users\mauromi\source\git_repos\a2a\server\A2A_04_AiFoundryAgent\obj\Debug\net
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_04_AiFoundryAgent\obj\Debug\net9.0\A2A_01_AiFoundryAgent.pdb
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_04_AiFoundryAgent\obj\Debug\net9.0\A2A_01_AiFoundryAgent.genruntimeconfig.cache
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_04_AiFoundryAgent\obj\Debug\net9.0\ref\A2A_01_AiFoundryAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_04_AiFoundryAgent\obj\Debug\net9.0\swae.build.ex.cache

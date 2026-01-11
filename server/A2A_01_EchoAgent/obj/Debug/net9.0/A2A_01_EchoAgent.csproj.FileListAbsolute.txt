@@ -40,3 +40,4 @@ E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\r
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.pdb
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\A2A_01_EchoAgent.genruntimeconfig.cache
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\ref\A2A_01_EchoAgent.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_01_EchoAgent\obj\Debug\net9.0\swae.build.ex.cache

@@ -1,0 +1,24 @@
+## A2A GET on MapWellKnownAgentCard path
+GET http://localhost:5001/.well-known/agent-card.json
+###
+
+## A2A GET (a more generic Card request)
+GET http://localhost:5001/echo/v1/card
+###
+
+## A2A POST on MapHttpA2A path
+POST http://localhost:5001/echo/v1/message:send
+Content-Type: application/json
+
+{
+  "message": {
+    "kind": "message",
+    "role": "user",
+    "messageId": "msg-001",
+    "contextId": "conv-123",
+    "parts": [
+      { "kind": "text", "text": "Hello Echo Agent!" }
+    ]
+  }
+}
+###

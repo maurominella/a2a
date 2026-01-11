@@ -8,15 +8,12 @@ public class EchoAgent
     {
         InitializeAgent();
     }
-    public void Attach(ITaskManager taskManager)
-    {
-        taskManager.OnMessageReceived = ProcessMessageAsync;
-        taskManager.OnAgentCardQuery = GetAgentCardAsync;
+    public void Attach(ITaskManager taskManager) {
+        taskManager.OnAgentCardQuery = GetAgentCardAsync2;
+        taskManager.OnMessageReceived = ProcessMessageAsync2;
     }
-
-    public Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
-    {
-
+    
+    public Task<AgentCard> GetAgentCardAsync2(string agentUrl, CancellationToken cancellationToken) {
         if (cancellationToken.IsCancellationRequested)
         {
             return Task.FromCanceled<AgentCard>(cancellationToken);
@@ -40,9 +37,8 @@ public class EchoAgent
             Skills = []
         });
     }
-
-    private Task<A2A.A2AResponse> ProcessMessageAsync(MessageSendParams messageSendParams, CancellationToken cancellationToken)
-    {
+    
+    private Task<A2A.A2AResponse> ProcessMessageAsync2(MessageSendParams messageSendParams, CancellationToken cancellationToken) {
         if (cancellationToken.IsCancellationRequested)
         {
             return Task.FromCanceled<A2AResponse>(cancellationToken);
@@ -65,9 +61,7 @@ public class EchoAgent
         return Task.FromResult<A2A.A2AResponse>(ResponseMessage);
     }
 
-    
-    private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)
-    {
+    private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null) {
         string? agent_response = "";
 
         Console.WriteLine("\n");
@@ -80,8 +74,7 @@ public class EchoAgent
         return agent_response;
     }
 
-    private void InitializeAgent()
-    {        
+    private void InitializeAgent() {      
         Console.WriteLine($"\n\n=========== Agent <EchoAgent> was initialized ===========\n\n");
     }
 }

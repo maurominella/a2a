@@ -15,9 +15,7 @@ namespace AgentServer; // Namespace for the agent server
 public class AiFoundryAgent
 {
     AzureAIAgent? _agent;
-    
     public AiFoundryAgent() { }
-
     public static async Task<AiFoundryAgent> CreateAsync()
     {
         var agent = new AiFoundryAgent();
@@ -26,8 +24,8 @@ public class AiFoundryAgent
     }
     public void Attach(ITaskManager taskManager)
     {
-        taskManager.OnMessageReceived = ProcessMessageAsync;
         taskManager.OnAgentCardQuery = GetAgentCardAsync;
+        taskManager.OnMessageReceived = ProcessMessageAsync;
     }
     public Task<AgentCard> GetAgentCardAsync(string agentUrl, CancellationToken cancellationToken)
     {
@@ -78,7 +76,6 @@ public class AiFoundryAgent
 
         return Task.FromResult<A2A.A2AResponse>(message);
     }
-
     private async Task<string> GenericChatWithAgentAsync(object? agent, string? question = null)
     {
         string? agent_response = "";
@@ -99,7 +96,6 @@ public class AiFoundryAgent
 
         return agent_response;
     }
-
     private async Task InitializeAgentAsync(string? aifoundryagent_id)
     {
         #region Environment Configuration
