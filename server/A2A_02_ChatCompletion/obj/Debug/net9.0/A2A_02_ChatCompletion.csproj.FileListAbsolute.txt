@@ -73,3 +73,4 @@ E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_ChatCompletion\obj\Debug\net
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_ChatCompletion\obj\Debug\net9.0\A2A_02_ChatCompletion.pdb
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_ChatCompletion\obj\Debug\net9.0\A2A_02_ChatCompletion.genruntimeconfig.cache
 E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_ChatCompletion\obj\Debug\net9.0\ref\A2A_02_ChatCompletion.dll
+E:\Users\mauromi\source\git_repos\a2a\server\A2A_02_ChatCompletion\obj\Debug\net9.0\swae.build.ex.cache

@@ -52,15 +52,15 @@
           "dependencies": {
             "Microsoft.Agents.AI.A2A": {
               "target": "Package",
-              "version": "[1.0.0-preview.251009.1, )"
+              "version": "[1.0.0-preview.260108.1, )"
             },
             "Microsoft.Agents.AI.Abstractions": {
               "target": "Package",
-              "version": "[1.0.0-preview.251009.1, )"
+              "version": "[1.0.0-preview.260108.1, )"
             },
             "Microsoft.Agents.AI.Workflows": {
               "target": "Package",
-              "version": "[1.0.0-preview.251009.1, )"
+              "version": "[1.0.0-preview.260108.1, )"
             }
           },
           "imports": [
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
