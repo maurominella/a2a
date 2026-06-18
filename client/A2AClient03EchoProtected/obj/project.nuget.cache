@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "vvlE6S3XoiY=",
+  "success": true,
+  "projectFilePath": "/home/mauromi/git_repos/a2a/client/A2AClient03EchoProtected/A2AClient03EchoProtected.csproj",
+  "expectedPackageFiles": [
+    "/home/mauromi/.nuget/packages/a2a/1.0.0-preview2/a2a.1.0.0-preview2.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/microsoft.extensions.ai.abstractions/10.4.1/microsoft.extensions.ai.abstractions.10.4.1.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.5/microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.5/microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/system.diagnostics.diagnosticsource/10.0.5/system.diagnostics.diagnosticsource.10.0.5.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/system.io.pipelines/10.0.5/system.io.pipelines.10.0.5.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/system.linq.asyncenumerable/10.0.5/system.linq.asyncenumerable.10.0.5.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/system.net.serversentevents/10.0.5/system.net.serversentevents.10.0.5.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/system.text.encodings.web/10.0.5/system.text.encodings.web.10.0.5.nupkg.sha512",
+    "/home/mauromi/.nuget/packages/system.text.json/10.0.5/system.text.json.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

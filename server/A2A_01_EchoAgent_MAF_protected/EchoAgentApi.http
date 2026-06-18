@@ -1,0 +1,48 @@
+@EchoAgentApi_HostAddress = http://localhost:5285
+
+### Agent card (HTTP+JSON binding) — apribile anche dal browser
+GET {{EchoAgentApi_HostAddress}}/a2a/card
+Accept: application/json
+
+### Invio messaggio (REST, HTTP+JSON) — l'agente riecheggia il testo
+# role: ROLE_USER (oppure il numero 1). La risposta arriva con role ROLE_AGENT.
+POST {{EchoAgentApi_HostAddress}}/a2a/message:send
+Content-Type: application/json
+
+{
+  "message": {
+    "role": "ROLE_USER",
+    "messageId": "m1",
+    "parts": [ { "text": "Ciao A2A" } ]
+  }
+}
+
+### Invio messaggio in streaming (REST, Server-Sent Events)
+POST {{EchoAgentApi_HostAddress}}/a2a/message:stream
+Content-Type: application/json
+
+{
+  "message": {
+    "role": "ROLE_USER",
+    "messageId": "s1",
+    "parts": [ { "text": "Ciao in streaming" } ]
+  }
+}
+
+### Invio messaggio (JSON-RPC) — endpoint nativo A2A sulla root "/"
+# Nota: il metodo è "SendMessage" (questo core usa nomi protobuf, non "message/send").
+POST {{EchoAgentApi_HostAddress}}/
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": "1",
+  "method": "SendMessage",
+  "params": {
+    "message": {
+      "role": "ROLE_USER",
+      "messageId": "j1",
+      "parts": [ { "text": "Ciao via JSON-RPC" } ]
+    }
+  }
+}
