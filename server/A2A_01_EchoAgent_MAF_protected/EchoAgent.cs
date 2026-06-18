@@ -28,6 +28,7 @@ internal sealed class EchoChatClient : IChatClient
         // lo spezziamo in piu' chunk ed emettiamo un ChatResponseUpdate per ciascuno.
         // Cosi' il client riceve piu' eventi SSE, indipendentemente dalla lunghezza.
         const int chunkSize = 64; // caratteri per chunk (regolabile)
+        var chunkDelay = TimeSpan.FromMilliseconds(500); // pausa tra un chunk e l'altro
 
         if (text.Length == 0)
         {
@@ -41,9 +42,9 @@ internal sealed class EchoChatClient : IChatClient
             var chunk = text.Substring(i, Math.Min(chunkSize, text.Length - i));
             yield return new ChatResponseUpdate(ChatRole.Assistant, chunk);
 
-            // Cede il controllo cosi' ogni chunk puo' essere serializzato/inviato
-            // separatamente invece di essere bufferizzato in un'unica risposta.
-            await Task.Yield();
+            // Ritardo artificiale per simulare la cadenza di un LLM reale: ogni
+            // chunk viene inviato come evento SSE separato a distanza di mezzo secondo.
+            await Task.Delay(chunkDelay, cancellationToken);
         }
     }
 
