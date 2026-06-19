@@ -1,0 +1,6 @@
+# Secrets — the access token written by get-token.sh. NEVER commit this.
+.env
+
+# Build output
+bin/
+obj/

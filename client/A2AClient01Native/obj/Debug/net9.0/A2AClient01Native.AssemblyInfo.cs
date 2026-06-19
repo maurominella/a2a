@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("A2AClient01Native")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ed1058dc2664ced85ad8815217264ba5c8d4baf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e26ebf8e27ef14683dcf672524de6eda22392c78")]
 [assembly: System.Reflection.AssemblyProductAttribute("A2AClient01Native")]
 [assembly: System.Reflection.AssemblyTitleAttribute("A2AClient01Native")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6537,31 +6537,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mauromi\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/mauromi/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_ChatCompletion\\A2A_02_ChatCompletion.csproj",
+      "projectUniqueName": "/home/mauromi/git_repos/a2a/server/A2A_02_ChatCompletion/A2A_02_ChatCompletion.csproj",
       "projectName": "A2A_02_ChatCompletion",
-      "projectPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_ChatCompletion\\A2A_02_ChatCompletion.csproj",
-      "packagesPath": "C:\\Users\\mauromi\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\mauromi\\source\\git_repos\\a2a\\server\\A2A_02_ChatCompletion\\obj\\",
+      "projectPath": "/home/mauromi/git_repos/a2a/server/A2A_02_ChatCompletion/A2A_02_ChatCompletion.csproj",
+      "packagesPath": "/home/mauromi/.nuget/packages/",
+      "outputPath": "/home/mauromi/git_repos/a2a/server/A2A_02_ChatCompletion/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mauromi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/mauromi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6580,7 +6573,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -6642,7 +6635,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/mauromi/.dotnet/sdk/9.0.313/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

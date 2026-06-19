@@ -21,12 +21,12 @@ AIAgent echoAgent = EchoAgent.Create();
 builder.Services.AddA2AServer(echoAgent);
 
 // Autenticazione: valida i token JWT Bearer emessi da Microsoft Entra ID
-// usando i parametri della sezione "AzureAd" di appsettings.json.
+// usando i parametri della sezione "EntraID" di appsettings.json.
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
+    .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("EntraID"));
 
-// Autorizzazione: abilita i criteri (li applicheremo agli endpoint nel passo 4).
+// Autorizzazione: abilita i criteri (li applicheremo agli endpoint definiti sotto).
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
@@ -39,6 +39,7 @@ app.UseAuthorization();
 // ogni chiamata senza un token Bearer valido riceve 401 Unauthorized.
 // - binding JSON-RPC (usato dai client A2A "nativi") sulla root "/"
 app.MapA2AJsonRpc(echoAgent, "/").RequireAuthorization();
+
 // - binding HTTP+JSON (REST), comodo per test da browser/curl, sotto "/a2a"
 app.MapA2AHttpJson(echoAgent, "/a2a").RequireAuthorization();
 
