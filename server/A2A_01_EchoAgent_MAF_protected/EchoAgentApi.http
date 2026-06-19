@@ -1,13 +1,24 @@
-@EchoAgentApi_HostAddress = http://localhost:5285
+# https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=rest-api
+# az login --use-device-code --tenant 3ad0b905-34ab-4116-93d9-c1dcc2d35af6
+# APP_OBJ_ID=128bb5ae-9801-4e7e-80f9-e4d814035e37; echo $APP_OBJ_ID
+# APP_ID_URI=$(az ad app show --id $APP_OBJ_ID --query "identifierUris[0]" -o tsv | tr -d '\r'); echo $APP_ID_URI
+# SCOPE_VALUE=$(az ad app show --id $APP_OBJ_ID --query "api.oauth2PermissionScopes[0].value" -o tsv | tr -d '\r'); echo $SCOPE_VALUE
+# TOKEN=$(az account get-access-token --scope "${APP_ID_URI}/${SCOPE_VALUE}" --query accessToken -o tsv); echo $TOKEN
+
+
+@EchoAgentApi_HostAddress = https://73jp658j-5285.euw.devtunnels.ms
+@bearertoken_for_a2a = eyJ***
 
 ### Agent card (HTTP+JSON binding) — apribile anche dal browser
 GET {{EchoAgentApi_HostAddress}}/a2a/card
 Accept: application/json
+Authorization: Bearer {{bearertoken_for_a2a}}
 
 ### Invio messaggio (REST, HTTP+JSON) — l'agente riecheggia il testo
 # role: ROLE_USER (oppure il numero 1). La risposta arriva con role ROLE_AGENT.
 POST {{EchoAgentApi_HostAddress}}/a2a/message:send
 Content-Type: application/json
+Authorization: Bearer {{bearertoken_for_a2a}}
 
 {
   "message": {
@@ -20,6 +31,7 @@ Content-Type: application/json
 ### Invio messaggio in streaming (REST, Server-Sent Events)
 POST {{EchoAgentApi_HostAddress}}/a2a/message:stream
 Content-Type: application/json
+Authorization: Bearer {{bearertoken_for_a2a}}
 
 {
   "message": {
@@ -33,6 +45,7 @@ Content-Type: application/json
 # Nota: il metodo è "SendMessage" (questo core usa nomi protobuf, non "message/send").
 POST {{EchoAgentApi_HostAddress}}/
 Content-Type: application/json
+Authorization: Bearer {{bearertoken_for_a2a}}
 
 {
   "jsonrpc": "2.0",

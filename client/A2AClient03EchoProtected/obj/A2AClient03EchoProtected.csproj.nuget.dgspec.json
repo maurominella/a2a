@@ -47,6 +47,10 @@
             "A2A": {
               "target": "Package",
               "version": "[1.0.0-preview2, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.13.1, )"
             }
           },
           "imports": [

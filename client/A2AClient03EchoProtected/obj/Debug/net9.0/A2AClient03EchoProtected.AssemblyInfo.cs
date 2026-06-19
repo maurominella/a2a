@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("A2AClient03EchoProtected")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+187ad6d78c9a0774ade9c70dc4e1ba5c6e334eb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88d9f9e0acd6c173abd13b5f91ffeff4ba05a7f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("A2AClient03EchoProtected")]
 [assembly: System.Reflection.AssemblyTitleAttribute("A2AClient03EchoProtected")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -51,6 +51,10 @@
             "Microsoft.Agents.AI.Hosting.A2A.AspNetCore": {
               "target": "Package",
               "version": "[1.10.0-preview.260610.1, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[4.10.0, )"
             }
           },
           "imports": [

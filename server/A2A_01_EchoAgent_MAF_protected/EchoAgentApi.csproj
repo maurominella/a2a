@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Agents.AI.A2A" Version="1.10.0-preview.260610.1" />
     <PackageReference Include="Microsoft.Agents.AI.Hosting.A2A.AspNetCore" Version="1.10.0-preview.260610.1" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="4.10.0" />
   </ItemGroup>
 
 </Project>

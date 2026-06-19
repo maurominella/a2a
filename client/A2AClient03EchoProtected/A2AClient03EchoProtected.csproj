@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="A2A" Version="1.0.0-preview2" />
+    <PackageReference Include="Azure.Identity" Version="1.13.1" />
   </ItemGroup>
 
 </Project>
